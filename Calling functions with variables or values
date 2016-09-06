@@ -1,8 +1,0 @@
-def salary(pay_rate, hours_worked):
-    my_salary = pay_rate*hours_worked
-    str_salary = str(my_salary)
-    print("I made " + str_salary + " dollars this week")
-pay_rate = 8
-hours_worked = 40
-salary(pay_rate, hours_worked)
-salary(8,40)
