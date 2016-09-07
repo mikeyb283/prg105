@@ -1,0 +1,82 @@
+import turtle
+bob = turtle.Turtle()
+
+bob.penup()
+bob.goto(300,-100)
+bob.pendown()
+
+bob.lt(180)
+bob.fd(600)
+
+bob.penup()
+bob.rt(180)
+bob.fd(25)
+bob.pendown()
+
+bob.lt(90)
+bob.fd(175)
+bob.rt(90)
+bob.fd(40)
+bob.rt(90)
+bob.fd(175)
+
+bob.penup()
+bob.lt(90)
+bob.fd(25)
+bob.pendown()
+
+bob.lt(90)
+bob.fd(200)
+bob.rt(90)
+bob.fd(75)
+bob.rt(90)
+bob.fd(200)
+
+bob.penup()
+bob.lt(90)
+bob.fd(5)
+bob.lt(90)
+bob.pendown()
+
+for i in range(4):
+    bob.fd(20)
+    bob.rt(90)
+    bob.fd(20)
+    bob.lt(120)
+    bob.fd(20)
+    bob.lt(120)
+    bob.fd(20)
+    bob.lt(120)
+    bob.penup()
+    bob.fd(20)
+    bob.rt(90)
+    bob.pendown()
+    bob.fd(20)
+    bob.lt(90)
+    bob.lt(90)
+
+bob.rt(90)
+bob.penup()
+bob.fd(75)
+bob.lt(90)
+bob.pendown()
+
+bob.fd(250)
+bob.rt(90)
+bob.fd(30)
+bob.rt(90)
+bob.fd(250)
+
+for i in range(3):
+    bob.penup()
+    bob.lt(90)
+    bob.fd(10)
+    bob.lt(90)
+    bob.pendown()
+    bob.fd(100)
+    bob.rt(90)
+    bob.fd(60)
+    bob.rt(90)
+    bob.fd(100)
+
+turtle.mainloop()
