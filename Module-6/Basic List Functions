@@ -1,0 +1,13 @@
+cars = []
+newcar = ""
+
+print ("Enter the model of car, when finished enter done")
+while newcar != "done":
+    newcar = raw_input("Enter the model of car: ")
+    if newcar != "done":
+        cars.append(newcar)
+        cars.sort()
+
+for car in cars:
+    print car
+print ("\n")
