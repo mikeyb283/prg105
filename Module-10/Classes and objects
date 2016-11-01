@@ -1,0 +1,27 @@
+class Student(object):
+    """The student class will be used for student information"""
+
+student = Student()
+
+student.studentID = '0161299'
+student.firstName = 'Mike'
+student.lastName = 'Balling'
+student.email = 'mballing@students.mchenry.edu'
+
+
+def create_student():
+    s = Student()
+    s.studentID = raw_input("Please enter student Id number: ")
+    s.firstName = raw_input("\nPlease enter student first name: ")
+    s.lastName = raw_input("\nPlease enter student last name: ")
+    s.email = raw_input("\nPlease enter student email address: ")
+    return s
+
+
+student1 = create_student()
+print ("\n" + student1.studentID + ' ' + student1.firstName + ' ' + student1.lastName + ' ' + student1.email + "\n\n")
+
+student2 = create_student()
+print ("\n" + student2.studentID + ' ' + student2.firstName + ' ' + student2.lastName + ' ' + student2.email + "\n\n")
+
+print ("\n\n" + student.studentID + " " + student.firstName + " " + student.lastName + " " + student.email + "\n\n")
