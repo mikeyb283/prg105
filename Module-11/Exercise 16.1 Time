@@ -1,0 +1,18 @@
+class Time:
+    """Represents the time of day
+    attributes: hour, minute, second
+    """
+
+    def __init__(self):
+        pass
+
+
+def print_time(t):
+    print '%.2d:%.2d:%.2d' % (t.hour, t.minute, t.second)
+
+time = Time()
+time.hour = 2
+time.minute = 3
+time.second = 4
+
+print_time(time)
