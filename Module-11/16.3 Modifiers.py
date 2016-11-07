@@ -11,7 +11,7 @@ def add_time(time):
     return seconds
 
 
-def chang_time_by(seconds):
+def change_time_by(seconds):
     time = Time()
     minutes, time.second = divmod(seconds, 60)
     time.hour, time.minute = divmod(minutes, 60)
@@ -39,7 +39,7 @@ inc_sec = raw_input('\nModify the time by _ seconds: ')
 inc_seconds = modify(time.seconds, int(inc_sec))
 
 
-time = chang_time_by(inc_seconds)
+time = change_time_by(inc_seconds)
 
 
 if time.hour > 12:
