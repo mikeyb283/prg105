@@ -1,8 +1,8 @@
 from datetime import datetime
 
 def time_until_birthday():
-    dob_input = input(('Please enter the date of your birth in '
-                       'the format "mm/dd/yyyy": '))
+    dob_input = raw_input(('Please enter the date of your birth in '
+                       'the format mm/dd/yyyy: '))
     dob = datetime.strptime(dob_input, '%m/%d/%Y')
     now = datetime.now()
     if now > datetime(now.year, dob.month, dob.day):
